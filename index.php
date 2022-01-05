@@ -40,35 +40,35 @@ $people[0]['lastname'] = "Vlček";
 $people[0]['age'] = 30;
 $people[0]['height'] = 181;
 $people[0]['weight'] = 83;
-$people[0['movie'] = movies[1]; 
+$people[0['movie'] = $movies[1]; 
 
 $people[1]['firstname'] = "Martin";
 $people[1]['lastname'] = "Fenin";
 $people[1]['age'] = 34;
 $people[1]['height'] = 180;
 $people[1]['weight'] = 81;
-$people[1]['movie'] = movies[3];
+$people[1]['movie'] = $movies[3];
 
 $people[2]['firstname'] = "Karel";
 $people[2]['lastname'] = "Gott";
 $people[2]['age'] = 80;
 $people[2]['height'] = 176;
 $people[2]['weight'] = 70;        
-$people[2]['movie'] = movies[2];
+$people[2]['movie'] = $movies[2];
 
 $people[3]['firstname'] = "Jakub";
 $people[3]['lastname'] = "Janeček";
 $people[3]['age'] = 35;
 $people[3]['height'] = 185;
 $people[3]['weight'] = 68;
-$people[3]['movie'] = movies[4];
+$people[3]['movie'] = $movies[4];
 
 $people[4]['firstname'] = "Daniel";
 $people[4]['lastname'] = "Vávra";
 $people[4]['age'] = 46;
 $people[4]['height'] = 169;
 $people[4]['weight'] = 90;    
-$people[4]['movie'] = movies[5]; 
+$people[4]['movie'] = $movies[5]; 
     
     
 for ($i=0; $i <count($people); $i++) { ?>{ 
@@ -78,10 +78,10 @@ for ($i=0; $i <count($people); $i++) { ?>{
     <p><strong>Věk: </strong><?= $people[$i]['age'];?></p>
     <p><strong>Výška: </strong><?= $people[$i]['height'];?></p> 
     <p><strong>Váha: </strong><?= $people[$i]['weight'];?></p>
-    <p><strong>Nejoblíbenější film: </strong><?= $people[$i] ['movies']['name'];?></p>
-    <p><strong>Režisér: </strong><?= $people[$i] ['movies']['director'];?></p>
-    <p><strong>Rok vydání: </strong><?= $people[$i]['movies']['year'];?></p>
-    <p><strong>Žánr filmu: </strong><?= $people[$i]['movies']['genre'];?></p>
+    <p><strong>Nejoblíbenější film: </strong><?= $people[$i] ['movie']['name'];?></p>
+    <p><strong>Režisér: </strong><?= $people[$i] ['movie']['director'];?></p>
+    <p><strong>Rok vydání: </strong><?= $people[$i]['movie']['year'];?></p>
+    <p><strong>Žánr filmu: </strong><?= $people[$i]['movie']['genre'];?></p>
     
 <?php
 }
