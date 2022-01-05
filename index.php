@@ -78,10 +78,10 @@ for ($i=0; $i <count($people); $i++) { ?>{
     <p><strong>Věk: </strong><?= $people[$i]['age'];?></p>
     <p><strong>Výška: </strong><?= $people[$i]['height'];?></p> 
     <p><strong>Váha: </strong><?= $people[$i]['weight'];?></p>
-    <p><strong>Nejoblíbenější film: </strong><?= $people[$i]['name'];?></p>
-    <p><strong>Režisér: </strong><?= $people[$i]['director'];?></p>
-    <p><strong>Rok vydání: </strong><?= $people[$i]['year'];?></p>
-    <p><strong>Žánr filmu: </strong><?= $people[$i]['genre'];?></p>
+    <p><strong>Nejoblíbenější film: </strong><?= $people[$i] ['movies']['name'];?></p>
+    <p><strong>Režisér: </strong><?= $people[$i] ['movies']['director'];?></p>
+    <p><strong>Rok vydání: </strong><?= $people[$i]['movies']['year'];?></p>
+    <p><strong>Žánr filmu: </strong><?= $people[$i]['movies']['genre'];?></p>
     
 <?php
 }
